@@ -1,0 +1,92 @@
+{
+  "_from": "@adonisjs/websocket-packet@^1.0.6",
+  "_id": "@adonisjs/websocket-packet@1.0.6",
+  "_inBundle": false,
+  "_integrity": "sha512-4MlcnwfJ5fy9EGBA0gNDAUThfrK4JeisQzHkRg0Z/Y3WGeciSuzgRB8hdwi2YEFeNOsEFcKme4ubEZXTAF020g==",
+  "_location": "/@adonisjs/websocket-packet",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@adonisjs/websocket-packet@^1.0.6",
+    "name": "@adonisjs/websocket-packet",
+    "escapedName": "@adonisjs%2fwebsocket-packet",
+    "scope": "@adonisjs",
+    "rawSpec": "^1.0.6",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.6"
+  },
+  "_requiredBy": [
+    "/@adonisjs/websocket-client"
+  ],
+  "_resolved": "https://registry.npmjs.org/@adonisjs/websocket-packet/-/websocket-packet-1.0.6.tgz",
+  "_shasum": "7b310c777fd66793149ff2de94c6b2be46302bdc",
+  "_spec": "@adonisjs/websocket-packet@^1.0.6",
+  "_where": "/home/zhakami/Projects/Sideline/Old/chuzy/sosiot/node_modules/@adonisjs/websocket-client",
+  "author": {
+    "name": "virk"
+  },
+  "browser": "dist/wsp.browser.js",
+  "bugs": {
+    "url": "https://github.com/adonisjs/adonis-websocket-packet/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Verify,create adonis websocket packets",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "japa": "^1.0.6",
+    "japa-cli": "^1.0.1",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-japa": "^1.0.2",
+    "karma-rollup-preprocessor": "^5.1.1",
+    "puppeteer": "^1.1.1",
+    "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0",
+    "standard": "^11.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/adonisjs/adonis-websocket-packet#readme",
+  "keywords": [
+    "websocket",
+    "ws",
+    "socketio"
+  ],
+  "license": "MIT",
+  "main": "dist/wsp.node.js",
+  "module": "dist/wsp.es.js",
+  "name": "@adonisjs/websocket-packet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonisjs/adonis-websocket-packet.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "standard",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run lint && npm run build",
+    "test": "npm run test:node && npm run test:karma",
+    "test:karma": "karma start",
+    "test:node": "japa"
+  },
+  "standard": {
+    "ignore": [
+      "dist/*.js"
+    ],
+    "globals": [
+      "group",
+      "test"
+    ]
+  },
+  "version": "1.0.6"
+}

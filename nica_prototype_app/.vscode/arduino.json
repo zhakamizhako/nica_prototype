@@ -1,0 +1,6 @@
+{
+    "board": "esp32:esp32:esp32",
+    "configuration": "PSRAM=enabled,PartitionScheme=default,CPUFreq=240,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=460800,DebugLevel=none",
+    "sketch": "../NicaPrototype/NewPrototype/Project_NICA/Project_NICA.ino",
+    "port": "/dev/cu.usbserial-142140"
+}

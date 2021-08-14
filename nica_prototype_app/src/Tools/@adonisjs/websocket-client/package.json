@@ -1,0 +1,104 @@
+{
+  "_from": "@adonisjs/websocket-client",
+  "_id": "@adonisjs/websocket-client@1.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-GhHmGgyylwYUB+lBMt6KFPEQo1tck4Pn1n/aFs23CydcdChJfy4Yhtn+edqTtIYS+HTpbvXNvqn2z4EiS/xZOg==",
+  "_location": "/@adonisjs/websocket-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@adonisjs/websocket-client",
+    "name": "@adonisjs/websocket-client",
+    "escapedName": "@adonisjs%2fwebsocket-client",
+    "scope": "@adonisjs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@adonisjs/websocket-client/-/websocket-client-1.0.9.tgz",
+  "_shasum": "94f018489e68e05425046b053478d44ed003b827",
+  "_spec": "@adonisjs/websocket-client",
+  "_where": "/home/zhakami/Projects/Sideline/Old/chuzy/sosiot",
+  "author": {
+    "name": "virk"
+  },
+  "browser": "dist/Ws.browser.js",
+  "bundleDependencies": false,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@adonisjs/websocket-packet": "^1.0.6",
+    "emittery": "^0.3.0",
+    "query-string": "^6.0.0"
+  },
+  "deprecated": false,
+  "description": "Websocket client for AdonisJs",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chalk": "^2.3.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "got": "^8.3.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-japa": "^1.0.2",
+    "karma-rollup-preprocessor": "^5.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "ngrok": "^3.0.0",
+    "opn": "^5.3.0",
+    "pify": "^3.0.0",
+    "puppeteer": "^1.2.0",
+    "rollup": "^0.57.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.2.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "standard": "^11.0.1",
+    "ws": "^5.0.0"
+  },
+  "keywords": [
+    "websocket",
+    "adonisjs",
+    "adonis",
+    "ws",
+    "socketio"
+  ],
+  "license": "MIT",
+  "main": "dist/Ws.es.js",
+  "module": "dist/Ws.es.js",
+  "name": "@adonisjs/websocket-client",
+  "scripts": {
+    "build": "npm run build:umd && npm run build:esm",
+    "build:esm": "rollup -c --esm",
+    "build:umd": "rollup -c --umd && rollup -c --umd-production",
+    "lint": "standard",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run lint",
+    "test": "npm run test:karma && npm run test:qunit",
+    "test:karma": "node ./bin/karma.js",
+    "test:karma:local": "karma start",
+    "test:qunit": "npm run build:esm && node ./bin/qunit.js"
+  },
+  "standard": {
+    "globals": [
+      "test",
+      "group",
+      "QUnit"
+    ]
+  },
+  "version": "1.0.9"
+}
